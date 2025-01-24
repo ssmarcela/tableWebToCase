@@ -1,0 +1,45 @@
+<template>
+    <lightning-card title="Casos para Tratativa" icon-name="standard:case">
+        <template if:true={cases}>
+            <lightning-datatable
+                key-field="Id"
+                data={cases}
+                columns={columns}
+                onrowaction={handleRowAction}>
+            </lightning-datatable>
+        </template>
+        <template if:false={cases}>
+            <div class="slds-m-around_medium">
+                <p>Não há casos pendentes para tratativa.</p>
+            </div>
+        </template><template if:false={cases}>
+            <div class="slds-m-around_medium">
+                <p>Não há casos pendentes para tratativa.</p>
+            </div>
+        </template>
+        <template if:false={cases}>
+            <lightning-spinner alternative-text="Carregando casos"></lightning-spinner>
+        </template>
+    </lightning-card>
+
+    <template if:true={isModalOpen}>
+        <section class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 class="slds-text-heading_medium">Detalhes do Caso</h2>
+                </header>
+                <div class="slds-modal__content slds-p-horizontal_medium">
+                    <p><b>Descrição:</b> {selectedCase.Description}</p>
+                    <p><b>Valor:</b> {selectedCase.TransactionValue__c}</p>
+                    <p><b>Tipo:</b> {selectedCase.ReclamationType__c}</p>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning-button label="Aprovar" variant="brand" onclick={approveCase} class="slds-p-horizontal_medium"></lightning-button>
+                    <lightning-button label="Rejeitar" variant="destructive" onclick={rejectCase} class="slds-p-horizontal_medium"></lightning-button>
+                    <lightning-button label="Fechar" onclick={closeModal} class="slds-p-horizontal_medium"></lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>
