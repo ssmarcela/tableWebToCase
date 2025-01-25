@@ -83,7 +83,7 @@ Este componente é diretamente vinculado ao Web-to-Case porque:
 
 ## Visualização
 
-![Após o inserção de dados no formulário o registro é criado e salvo no objeto Case.](MyProject/image.png)
+![Após o inserção de dados no formulário o registro é criado e salvo no objeto Case.](image.png)
 
 ![Clicando no botão "Tratar" será possivel aprovar ou rejeitar o registro.](image-1.png)
 
