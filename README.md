@@ -83,10 +83,19 @@ Este componente é diretamente vinculado ao Web-to-Case porque:
 
 ## Visualização
 
-![Após o inserção de dados no formulário o registro é criado e salvo no objeto Case.](image.png)
+- Após o inserção de dados no formulário o registro é criado e salvo no objeto Case.
 
-![Clicando no botão "Tratar" será possivel aprovar ou rejeitar o registro.](image-1.png)
+<img width="1438" alt="image" src="https://github.com/user-attachments/assets/5769e424-3e5e-4ecb-8649-08dd69e69c3f" />
 
-![Após aprovar ou rejeitar o registro, a tabela é atualizada pois já houve uma tratativa.](image-2.png)
+- Clicando no botão "Tratar" será possivel aprovar ou rejeitar o registro.
 
-![O status vai para aprovado ou rejeitado com base na sua escolha.](image-3.png)
+<img width="1439" alt="image" src="https://github.com/user-attachments/assets/576bc5e7-c907-46df-a21c-ab840b46dbe2" />
+
+- Após aprovar ou rejeitar o registro, a tabela é atualizada pois já houve uma tratativa.
+
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/8faaaae2-fadd-428f-87c9-782ea11e8ece" />
+
+- O status vai para aprovado ou rejeitado com base na sua escolha.
+
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/a17789e7-8a2b-4537-989e-3e8340920a4e" />
+
